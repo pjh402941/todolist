@@ -7,6 +7,7 @@
   border: none;
 }
 ul li{ list-style: none; padding-left: 0px; }
+
 *:focus { outline: none; }
 
 /* 배경 그라디언트 */
