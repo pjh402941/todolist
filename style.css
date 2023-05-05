@@ -1,0 +1,100 @@
+/* 기본 설정 */
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+}
+ul li{ list-style: none; padding-left: 0px; }
+*:focus { outline: none; }
+
+/* 배경 그라디언트 */
+/* 가운데정렬. 하위요소 inline-block 설정 */
+.container{
+  width: 100%;
+  height: 100vh;
+  padding:20px;
+  background: linear-gradient(135deg, #F7C4CC 0%, #B693D0);
+  text-align: center;
+}
+.sec {
+  width: 30%;
+  height: 80vh;
+  margin-top:10px;
+  display:inline-block; 
+  background:white;
+  border-radius: 20px;
+}
+/* 박스 그림자 */
+input[type="text"] {
+  width: 80%;
+  height: 40px;
+  margin: 5vh 5px 0px;
+  padding:15px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px rgb(218, 218, 218) inset;
+}
+#plus {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background:#B68BC8;
+}
+#list{
+  margin-top:5vh;
+  padding-left: 2.5vw;
+}
+ul li{
+  position: relative;
+  display:flex;
+  padding-bottom: 2vh;
+}
+/* uncheckedbox 추가 */
+ul li::before{
+  content:' ';
+  height:22px;
+  width:22px;
+  margin-right:10px;
+  background-image: url('unchecked.png');
+  background-size: cover;
+}
+.content{
+  margin-left: 10px;
+}
+/* checkedbox, 취소선 추가 */
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before{
+  background-image: url('checked.png');
+  background-size: cover;
+}
+.footer{
+  display:inline-block;
+  position: absolute;
+  bottom: 12%;
+  left:48%;
+}
+button#reset{
+  width:80px;
+  height: 5vh;
+}
+/* js에서 추가된 x css */
+ul li span{
+  width:30px;
+  height:30px;
+  padding-top:3px;
+  position:absolute;
+  border-radius:50%;
+  right:2vw;
+}
+/* hover 색 변함 */
+ul li span:hover{
+  background-color: #e6e6e6;
+}
+button#reset:hover{
+ background-color:#818181;
+}

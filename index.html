@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>To do list</title>
+</head>
+<body>
+    <div class="container">
+        <header><h1 style="color:white">To do list</h1></header>
+
+        <section class="sec">
+        <div class="input">
+                <input type="text" id="input-box" placeholder="Add your text" autofocus/>
+                <button type="button" id="plus" onClick="addItem()"><i class="fas fa-plus" style="color: #fff;"></i></button>
+        </div>
+
+        <ul id="list">
+            <!-- <li class="checked">ex1</li>
+            <li>ex2</li> -->
+        </ul>
+
+        <div class="footer">
+            <button type="button" id="reset">RESET</button>
+        </div>
+    </section>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html> 
